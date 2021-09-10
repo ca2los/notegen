@@ -1,6 +1,7 @@
     const note_form = document.getElementById('note_form');
     const note_container = document.getElementById('note_container');
 
+    // CREATE CARDS: Shows the 'rendered' and 'created' cards.
     const createCard = (note) => {
 
         // DIV: CARD (CREATE)
@@ -21,12 +22,17 @@
 
         // DIV: CARD -> BODY P
         const cardBodyEl = document.createElement('div');
-        cardBodyEl.classList.add('card-body', 'bg-light', 'p-2');
+        cardBodyEl.classList.add('card-body');
         cardBodyEl.innerHTML = `<p>${note.note}</p>`;
 
         // DIV: CARD -> DELETE BTN
         const cardButton = document.createElement('button');
         cardButton.classList.add('card-button');
+        cardButton.setAttribute('type','button');
+        cardButton.innerHTML = '❌';
+        cardButton.addEventListener('click', function() {
+            cardEl.style.display = 'none';
+        })
 
         // DIVS: APPEND -> INSIDE HTML
         cardEl.appendChild(cardHeaderEl);
@@ -37,7 +43,7 @@
         note_container.appendChild(cardEl);
     };
 
-    // Get a list of existing notes from the server
+    // GET: Obtaining the data from the API as JSON
     const get_notes = () =>
         fetch('/api/notes', {
             method: 'GET', // or 'PUT'
@@ -52,7 +58,7 @@
                 console.error('Error:', error);
             });
 
-    // Post a new note to the page
+    // POST: Adding a new note inside the API as JSON
     const post_note = (note) =>
         fetch('/api/notes', {
             method: 'POST',
@@ -70,10 +76,10 @@
                 console.error('Error:', error);
             });
 
-    // When the page loads, get all the notes
+    // ON LOAD: Webpage shows data on load
     get_notes().then((data) => data.forEach((note) => createCard(note)));
 
-    // Function to validate the notes that were submitted
+    // VALIDATION: For created notes
     const validatenote = (newnote) => {
         const { username, topic, note } = newnote;
 
