@@ -1,6 +1,6 @@
 # NOTEGEN
 ###### Developed by [*ca2los*](https://github.com/ca2los)
-[*TRY IT HERE*](https://github.com/ca2los/notegen)
+HEROKU SERVER: [*TRY IT HERE*](https://afternoon-citadel-34271.herokuapp.com/)
 VERSION 1.0
 
 ### *Note Generator*
