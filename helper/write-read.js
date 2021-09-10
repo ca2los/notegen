@@ -1,4 +1,4 @@
-    // 05 NPM FS: Read and Write
+    // 06 NPM FS: Read and Write
 
     const fs = require('fs');
     const util = require('util');

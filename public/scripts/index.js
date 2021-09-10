@@ -1,3 +1,5 @@
+    // 07. CREATE HTML ON LOAD
+
     const note_form = document.getElementById('note_form');
     const note_container = document.getElementById('note_container');
 
@@ -11,13 +13,7 @@
 
         // DIV: CARD -> H4 (CREATE)
         const cardHeaderEl = document.createElement('h4');
-        cardHeaderEl.classList.add(
-            'card-header',
-            'bg-primary',
-            'text-light',
-            'p-2',
-            'm-0'
-        );
+        cardHeaderEl.classList.add('card-header');
         cardHeaderEl.innerHTML = `${note.username} </br>`;
 
         // DIV: CARD -> BODY P
@@ -83,26 +79,26 @@
     const validatenote = (newnote) => {
         const { username, topic, note } = newnote;
 
-        // Object to hold our error messages until we are ready to return
+        // ERROR: Hold messages until they are ready
         const errorState = {
             username: '',
             note: '',
             topic: '',
         };
 
-        // Bool value if the username is valid
+        // ERROR: User length < 4
         const utest = username.length >= 4;
         if (!utest) {
             errorState.username = 'Invalid username!';
         }
 
-        // Bool value to see if the note being added is at least 15 characters long
+        // ERROR: Content length < 15
         const noteContentCheck = note.length > 15;
         if (!noteContentCheck) {
             errorState.note = 'note must be at least 15 characters';
         }
 
-        // Bool value to see if the topic is either UX or UI
+        // ERROR: Topic is not UX or UI
         const topicCheck = topic.includes('UX' || 'UI');
         if (!topicCheck) {
             errorState.topic = 'Topic not relevant to UX or UI';
@@ -113,12 +109,10 @@
             errors: errorState,
         };
 
-        // Return result object with a isValid boolean and an errors object for any errors that may exist
         return result;
     };
 
-    // Helper function to deal with errors that exist in the result
-
+    // HELPER: Errors from the result
     const showErrors = (errorObj) => {
         const errors = Object.values(errorObj);
         errors.forEach((error) => {
@@ -128,9 +122,9 @@
         });
     };
 
-    // Helper function to send a POST request to the diagnostics route
+    // HELPER: Post request to validate data
     const submitDiagnostics = (submissionObj) => {
-        fetch('/api/diagnostics', {
+        fetch('/api/validation', {
             method: 'POST',
             headers: {
                 'Content-Type': 'application/json',
@@ -144,18 +138,18 @@
             });
     };
 
-    // Function to handle when a user submits the feedback form
+    // WHEN the form is submitted
     const handleFormSubmit = (e) => {
         e.preventDefault();
         console.log('Form submit invoked');
 
-        // Get the value of the note and save it to a variable
+        // GET the value of the note and save it to a variable
         const noteContent = document.getElementById('note_text').value;
 
-        // get the value of the username and save it to a variable
+        // GET the value of the username and save it to a variable
         const note_user = document.getElementById('note_user').value.trim();
 
-        // Create an object with the note and username
+        // CREATE an object with the note and username
         const newnote = {
             username: note_user,
             topic: 'UX',
@@ -165,9 +159,8 @@
         // Run the note object through our validator function
         const submission = validatenote(newnote);
 
-        // If the submission is valid, post the note. Otherwise, handle the errors.
+        // VALID: Post the note || INVALID: Send error
         return submission.isValid ? post_note(newnote) : submitDiagnostics(submission);
     };
 
-    // Listen for when the form is submitted
     note_form.addEventListener('submit', handleFormSubmit);

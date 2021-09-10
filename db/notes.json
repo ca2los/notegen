@@ -34,5 +34,29 @@
         "note": "I want to finish the homework",
         "topic": "UX",
         "note_id": "23f2d8cb-6045-440b-a622-bdfe9234dabb"
+    },
+    {
+        "username": "Kojima",
+        "note": "Metal Gear Solid",
+        "topic": "UX",
+        "note_id": "eccc7d82-f52d-4a81-bb39-d15db8efa061"
+    },
+    {
+        "username": "Mokoto",
+        "note": "Ghost In the Shell",
+        "topic": "UX",
+        "note_id": "ac2cf077-4c70-493d-8011-dd84224b9981"
+    },
+    {
+        "username": "Nintendo",
+        "note": "Super Mario Bros Game of 1994",
+        "topic": "UX",
+        "note_id": "ed7f23d3-3d62-42aa-928a-29260c508471"
+    },
+    {
+        "username": "Carlos",
+        "note": "Here is a new comment for you to understand",
+        "topic": "UX",
+        "note_id": "bfbb71b6-1230-407e-bf69-d3ced5d891ef"
     }
 ]

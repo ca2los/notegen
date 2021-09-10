@@ -1,5 +1,4 @@
     // 03. GET + POST + DELETE
-    // Triggers the HTML methods from Insominia
 
     const notes = require('express').Router();
     const { v4: uuidv4 } = require('uuid');
@@ -9,12 +8,12 @@
         writeToFile,
     } = require('../helper/write-read');
     
-    // GET Route for retrieving all the notes
+    // GET: Route to retrieve DB JSON
     notes.get('/', (req, res) => {
         readFromFile('./db/notes.json').then((data) => res.json(JSON.parse(data)));
     });
     
-    // GET Route for a specific note
+    // GET: Route for a specific note
     notes.get('/:note_id', (req, res) => {
         const noteId = req.params.note_id;
         readFromFile('./db/notes.json')
@@ -27,7 +26,7 @@
             });
     });
     
-    // DELETE Route for a specific note
+    // DELETE: Route a note with the ID (INSOMNIA)
     notes.delete('/:note_id', (req, res) => {
         const noteId = req.params.note_id;
         readFromFile('./db/notes.json')
@@ -44,7 +43,7 @@
             });
     });
     
-    // POST Route for a new UX/UI note
+    // POST: Route a new note
     notes.post('/', (req, res) => {
         console.log(req.body);
     

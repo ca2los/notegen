@@ -1,4 +1,4 @@
-    // 04. LOGS: GET + POST + DELETE
+    // 05. LOGS: GET + POST
 
     const clog = (req, res, next) => {
         const fgCyan = '\x1b[36m';
@@ -11,10 +11,6 @@
                 console.info(`📘 ${fgCyan}${req.method} request to ${req.path}`);
                 break;
             }
-            /*case 'DELETE': {
-                console.info(`📕 ${fgCyan}${req.method} request to ${req.path}`);
-                break;
-            }*/
             default:
                 console.log(`📙${fgCyan}${req.method} request to ${req.path}`);
         }
