@@ -1,62 +1,26 @@
 [
     {
-        "username": "Edmund Duke",
+        "username": "Arthur C. Clarke",
         "topic": "UX",
-        "note": "You must study all days, no excuses.",
+        "note": "Any sufficiently advanced technology is indistinguishable from magic.",
         "note_id": "3fe5d166-2f9e-4e3d-87a7-25a561207c6c"
     },
     {
-        "username": "Sarah Kerrigan",
+        "username": "Kyle Simpson",
         "topic": "UX",
-        "note": "Even if the instructor goes too fast, take a time to ask questions.",
+        "note": "JavaScript's this mechanism isn't actually that advanced, but developers often paraphrase that quote in their own mind by inserting \"complex\" or \"confusing\".",
         "note_id": "ca0616fa-f603-4d85-a9c6-fa62c73a9bf9"
     },
     {
-        "username": "Jim Raynor",
-        "note": "Don't compare with others success, keep fighting, and results will come.",
+        "username": "Aditya Punjani",
+        "note": "A responsible developer should ask at this point, \"If I was incrementing a count property but it wasn't the one I expected, which count was I incrementing?\".",
         "topic": "UX",
         "note_id": "c83c28af-9197-4f2f-b119-03236ecfc0b6"
     },
     {
-        "username": "Carlos",
-        "note": "Repeat all notes every day",
+        "username": "Code Master",
+        "note": "Every time you feel yourself trying to mix lexical scope look-ups with this, remind yourself: there is no bridge.",
         "topic": "UX",
         "note_id": "652bd7a9-9d22-4d20-9c9a-c354d8a2bb6f"
-    },
-    {
-        "username": "Tamnara",
-        "note": "Adding a new note for further delete",
-        "topic": "UX",
-        "note_id": "041dda55-2ee1-48b9-8b42-524b921724bb"
-    },
-    {
-        "username": "Karl",
-        "note": "I want to finish the homework",
-        "topic": "UX",
-        "note_id": "23f2d8cb-6045-440b-a622-bdfe9234dabb"
-    },
-    {
-        "username": "Kojima",
-        "note": "Metal Gear Solid",
-        "topic": "UX",
-        "note_id": "eccc7d82-f52d-4a81-bb39-d15db8efa061"
-    },
-    {
-        "username": "Mokoto",
-        "note": "Ghost In the Shell",
-        "topic": "UX",
-        "note_id": "ac2cf077-4c70-493d-8011-dd84224b9981"
-    },
-    {
-        "username": "Nintendo",
-        "note": "Super Mario Bros Game of 1994",
-        "topic": "UX",
-        "note_id": "ed7f23d3-3d62-42aa-928a-29260c508471"
-    },
-    {
-        "username": "Carlos",
-        "note": "Here is a new comment for you to understand",
-        "topic": "UX",
-        "note_id": "bfbb71b6-1230-407e-bf69-d3ced5d891ef"
     }
 ]

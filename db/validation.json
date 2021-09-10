@@ -34,5 +34,14 @@
             "note": "Note must be at least 15 characters",
             "topic": ""
         }
+    },
+    {
+        "time": 1631249558103,
+        "error_id": "8ed8ccc1-bd40-47f1-bbec-9cb090a60083",
+        "errors": {
+            "username": "",
+            "note": "note must be at least 15 characters",
+            "topic": ""
+        }
     }
 ]

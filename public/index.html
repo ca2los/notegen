@@ -4,10 +4,55 @@
             <meta http-equiv="X-UA-Compatible" content="IE=edge" />
             <meta name="viewport" content="width=device-width, initial-scale=1.0" />
             <title>Note Generator</title>
+            <link rel="icon" type="image/png" href="./img/favicon.png">
+            <link rel="stylesheet" type="text/css" href="./styles/styles.min.css">
+            <link rel="preconnect" href="https://fonts.googleapis.com">
+            <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+            <link href="https://fonts.googleapis.com/css2?family=Montserrat&family=Roboto+Slab&display=swap" rel="stylesheet">
         </head>
         <body>
-            <section>
-                <button type="reset" onclick="location.href='./note.html'">NOTES!</button>
-            </section>
+            <header>
+                <section>
+                    <ul>
+                        <li>
+                            <a href="https://github.com/ca2los/notegen">
+                                <img src="./img/github_icon_black.png" alt="GitHub Logo"/>
+                            </a>
+                        </li>
+                        <li>
+                            <p>
+                                <a href="https://github.com/ca2los/notegen">/ca2los</a>
+                            </p>
+                        </li>
+                    </ul>
+                </section>
+                <section>
+                    <ul>
+                        <li>
+                            <button type="reset" onclick="location.href='https://github.com/ca2los/notegen'">GitHub Repository</button>
+                        </li>
+                    </ul>
+                </section>
+            </header>
+            <main class="landing">
+                <section>
+                    <h1>NOTEGEN</h1>
+                    <h2>Create && Save && Delete</h2>
+                    <p>Access to the webapp where you can write notes from the browser and save the data as JSON format.</p>
+                    <button type="reset" onclick="location.href='./note.html'">START</button>
+                </section>
+            </main>
+            <footer>
+                <section class="container">
+                    <section class="columns">
+                        <img src="./img/avatar.jpg" alt="Profile photo">
+                    </section>
+                    <section class="columns">
+                        <h1><a href="https://github.com/ca2los" target="_blank">ca2los</a></h1>
+                        <button type="reset" onclick="location.href='https://github.com/ca2los/notegen'">GitHub Repository</button>
+                        <p><strong>Description:</strong> Figuring out...</p>
+                    </section>
+                </section>
+            </footer>
         </body>
     </html>
