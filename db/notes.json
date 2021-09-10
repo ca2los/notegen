@@ -1,0 +1,38 @@
+[
+    {
+        "username": "Edmund Duke",
+        "topic": "UX",
+        "note": "You must study all days, no excuses.",
+        "note_id": "3fe5d166-2f9e-4e3d-87a7-25a561207c6c"
+    },
+    {
+        "username": "Sarah Kerrigan",
+        "topic": "UX",
+        "note": "Even if the instructor goes too fast, take a time to ask questions.",
+        "note_id": "ca0616fa-f603-4d85-a9c6-fa62c73a9bf9"
+    },
+    {
+        "username": "Jim Raynor",
+        "note": "Don't compare with others success, keep fighting, and results will come.",
+        "topic": "UX",
+        "note_id": "c83c28af-9197-4f2f-b119-03236ecfc0b6"
+    },
+    {
+        "username": "Carlos",
+        "note": "Repeat all notes every day",
+        "topic": "UX",
+        "note_id": "652bd7a9-9d22-4d20-9c9a-c354d8a2bb6f"
+    },
+    {
+        "username": "Tamnara",
+        "note": "Adding a new note for further delete",
+        "topic": "UX",
+        "note_id": "041dda55-2ee1-48b9-8b42-524b921724bb"
+    },
+    {
+        "username": "Karl",
+        "note": "I want to finish the homework",
+        "topic": "UX",
+        "note_id": "23f2d8cb-6045-440b-a622-bdfe9234dabb"
+    }
+]
