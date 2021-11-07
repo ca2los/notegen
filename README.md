@@ -52,7 +52,7 @@ KEY | VALUE
 `node server.js` | App listening to you local
 `GET request to` | Access to available files and paths
 `POST request to` | Publish data
-`DELETE request to` | Eliminate data when the ID key is accessedn
+`DELETE request to` | Eliminate data when the ID key is accessed
 
 #### This is how you will see the program running from your CLI:
 ![ANSWERS](./public/img/note_00.png)
